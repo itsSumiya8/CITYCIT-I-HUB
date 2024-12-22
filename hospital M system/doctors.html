@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <body>
+        <main class="content px-3 py-2">
+        <div class="container-fluid">
+           
+    
+            <!-- doctor Registration Form -->
+            <div class="card mb-4">
+                <div class="card-header" style="background-color:  rgb(24, 36, 247); color: white;">
+                    <h5 class="card-title">Add new doctors</h5>
+                </div>
+                <div class="card-body">
+                    <form id="studentForm">
+                        
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="doctor Name">Doctor Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-user" style="color:blue"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter doctorName" required>
+                                </div>
+                            </div>
+                            </div>
+                       
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="Email">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:blue"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Email" required>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="title">Title</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-briefcase" style="color:blue"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter title" required>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+    
+                        <!-- Region, Town, School Name - One Row -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="department">department</label>
+                                 <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-building" style="color:blue"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter cardiology" required>
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="Experience">Experience</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-calendar" style="color:blue"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Experience" required>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="contact Number">Contact Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-phone" style="color:blue"></i></span>
+                                    <input class="form-control" type="number" placeholder="Enter Contact Number" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="Degree">Degree</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-graduation-cap" style="color:blue"></i></span>
+                                        <input type="text" class="form-control" placeholder="Place of Degree" required>
+                                    </div>
+                            </div>
+                        </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="Fees">Fees</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-dollar-sign" style="color:blue"></i></span>
+                                    <input type="text" class="form-control" placeholder="Place of Fees" required>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label for="Profile photo">Profile photo</label>
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03"><i class="fa-solid fa-camera" style="color: blue;"></i></button>
+                                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                      </div>
+                            </div>
+                        </div>
+                        </div>
+    
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Registered doctors  Table -->
+            <div class="card">
+                <div class="card-header " style="background-color: rgb(24, 36, 247); color: white;">
+                    <h6 class="card-title">Registered Students</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Title</th>
+                                <th>department</th>
+                                <th>Experience</th>
+                                <th>Contact</th>
+                                <th>Fees</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sumaya said</td>
+                                <td>maya@gmail.com</td>
+                                <td>cardiology</td>
+                                <td>cardiology</td>
+                                <td>5yrs</td>
+                                <td>0907002092</td>
+                                <td>$1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>mohamad ali</td>
+                                <td>M.ali@gmail.com</td>
+                                <td>neurologist</td>
+                                <td>neurologist</td>
+                                <td>3yrs</td>
+                                <td>090740404</td>
+                                <td>$980</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>anas ahmad</td>
+                                <td>anas@gmail.com</td>
+                                <td>neurologist</td>
+                                <td>neurologist</td>
+                                <td>8yrs</td>
+                                <td>090740884</td>
+                                <td>$1100</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>rahma</td>
+                                <td>rahma@gmail.com</td>
+                                <td>cardiology</td>
+                                <td>cardiology</td>
+                                <td>15yrs</td>
+                                <td>090700099</td>
+                                <td>$5000</td>  
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+        <script src="js/bootstrap.js"></script>
+    </main>
+  </body>
+
+</html>

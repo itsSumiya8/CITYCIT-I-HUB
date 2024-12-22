@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   
+    <main class="content px-3 py-2">
+        <div class="container-fluid">
+        <div class="card mb-4">
+           <div class="card-header" style="background-color:  rgb(24, 36, 247); color: white;">
+        <h5 class="card-title">blood donation Registration</h5>
+        </div>
+        <div class="card-body">
+       <form id="bloodForm">
+                               
+       <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div>
+         <label for="full name">Full Name</label>
+       <div class="input-group">
+          <span class="input-group-text"><i class="fa-solid fa-user" style="color:blue"></i></span>
+           <input type="text" class="form-control" placeholder="Enter doctorName" required>
+           </div>
+              </div>
+                </div>
+       <div class="col-md-4">
+          <div>
+          <label for="Email">contact num</label>
+          <div class="input-group">
+             <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:blue"></i></span>
+              <input type="text" class="form-control" placeholder="Enter Email" required>
+         </div>
+       </div>
+       </div>
+        
+           <div class="col-md-4">
+              <div>
+                <label for="blood group">blood group</label>
+             <div class="input-group">
+         <span class="input-group-text"><i class="fa-solid fa-droplet" style="color:rgb(233, 38, 57)"></i></span>
+         <input type="text" class="form-control" placeholder="Enter blood group" required>
+             </div>
+               </div>
+           </div>
+       
+       <div class="col-md-4">
+         <div>
+          <label for="phone number">phone number</label>
+         <div class="input-group">
+           <span class="input-group-text"><i class="fa-solid fa-phone" style="color:blue"></i></span>
+            <input type="number" class="form-control" placeholder="Enter phone number" required>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-4">
+         <div>
+       <label for="village">age</label>
+       <div class="input-group">
+       <span class="input-group-text"><i class="fa-solid fa-calendar" style="color:blue"></i></span>
+        <input type="number" class="form-control" placeholder="Enter age" required>
+        </div>
+           </div>
+               </div>     
+               <div class="col-md-4">
+                   <div>
+                 <label for="gender">gender</label>
+                 <div class="input-group">
+                 <span class="input-group-text"><i class="fa-solid fa-venus-mars" style="color:blue"></i></span>
+                  <input type="text" class="form-control" placeholder="Enter gender" required>
+                  </div>
+                     </div>
+                         </div>        
+               
+           </div>
+        </div> 
+        
+       <div class="row g-3 mb-4">
+           <div class="col-md-3">
+       <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+           </div>
+       <div class="col-md-3">
+        <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+        </div>
+       <div class="col-md-3">
+       <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+         </div>
+       <div class="col-md-3">
+        <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+           </div>
+       </div>
+           
+         </form>
+         </div>
+       </div>
+           
+                   <!-- Registered doctors  Table -->
+                   <div class="card">
+                       <div class="card-header " style="background-color: rgb(24, 36, 247); color: white;">
+                           <h6 class="card-title">Registered Students</h6>
+                       </div>
+                       <div class="card-body">
+                           <table class="table table-striped">
+                               <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>Name</th>
+                                       <th>blood group</th>
+                                       <th>donation date</th>
+                                       <th>phone</th>
+                                      
+       
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>asma said</td>
+                                       <td>A+</td>
+                                      <td>2024-2-23</td>
+                                       <td>0907002092</td>
+                                    </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>ahmad jam</td>
+                                       <td>B+</td>
+                                       <td>2024-2-23</td>
+                                       <td>090709090</td>
+                                    </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>osman said</td>
+                                       <td>O-</td>
+                                        <td>2024-2-24</td>
+                                       <td>090700898</td>
+
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>ayan ali</td>
+                                       <td>O+</td>
+                                       <td>2024-2-24</td>
+                                       <td>09070028872</td>
+                                     </tr>
+       
+                                       <td>5</td>
+                                       <td>aysar said</td>
+                                       <td>A+</td>
+                                       <td>2024-2-24</td>
+                                      <td>090700656</td>
+                                       </tr>  
+       
+                                       <td>6</td>
+                                       <td>anas mahamad</td>
+                                       <td>AB+</td>
+                                       <td>2024-2-23</td>
+                                       <td>090700886</td>
+                                     </tr>   
+                                       
+                                       <td>7</td>
+                                       <td>khalid apdala</td>
+                                       <td>O-</td>
+                                       <td>2024-2-23</td>
+                                       <td>090700600</td>
+ 
+                                       </tr>  
+                                       <td>8</td>
+                                       <td>bishara musa</td>
+                                       <td>A-</td>
+                                       <td>2024-2-23</td>
+                                       <td>090700559</td>
+                                       </tr>  
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+               </div>  
+
+</body>
+
+</html>
