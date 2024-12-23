@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section1">
+<h1>Registration Form</h1>
+    <form name="myform" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" ><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter age"><br>
+
+            <label for="email">Email:</label><br>
+
+            <input type="email" id="email" name="email" placeholder="Enter email"><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" ><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" ><br>
+                <option value="" disabled selected>Select gender</option><br>
+                <option value="male">Male</option><br>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="course">Course:</label><br>
+            <select id="course" name="course"><br>
+                <option value="" disabled selected>Select course</option><br>
+                <option value="html-css">HTML & CSS</option><br>
+                <option value="javascript">JavaScript</option><br>
+                <option value="python">Python</option>
+            </select><br>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <h2>Registered Students</h2>
+ <table border="1px">
+    
+     <tr>
+        <th>Student Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th>Course</th>
+     </tr>
+
+    <tr>
+      <td>Asma farah</td>
+      <td>20</td>
+      <td>iammaya@gmail.com</td>
+      <td>+25209070000</td>
+      <td>female</td>
+      <td>HTML & CSS</td>
+  </tr>
+  
+  <tr>
+    <td>Saara Ali</td>
+    <td>15</td>
+    <td>iamsara@gmail.com</td>
+    <td>+252090709090</td>
+    <td>female</td>
+    <td>javascript</td>
+</tr>
+
+<tr>
+    <td>Anas jama</td>
+    <td>19</td>
+    <td>anas@gmail.com</td>
+    <td>+252090709898</td>
+    <td>male</td>
+    <td>database</td>
+</tr>
+</table>
+</form>
+</div> 
+</body>
+</html>
