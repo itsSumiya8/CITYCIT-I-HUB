@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIIN
+    </title>
+    <style>
+        *{margin: 0;
+         padding: 0;
+         }
+           
+         body{
+                background-color: rgb(248, 237, 237);
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+        header{
+            background-color:rgb(30, 168, 3);
+            color:#ffffff;
+            padding:1rem ;
+            text-align: center;
+            }
+            nav  {
+            background-color: #333;
+        
+            padding:  0;
+            }
+        nav ul{
+            list-style: none;
+            display: flex;
+            background-color: black;
+            padding: 10px;
+            justify-content: center;
+            }
+        
+        nav ul li a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+           
+        }
+        
+                 
+ 
+
+   
+   .section1 {text-align: center;
+
+
+   }
+   .section2 table{width: 100%;
+   border-collapse: collapse;
+   margin-top: 1px;
+
+   }
+   .section2 table tr th{background-color:rgb(30, 168, 3) ;
+    color: white;
+    text-align: left;
+
+   }
+   .section2 table th td{
+    padding: 2rem;
+    text-align: left;
+   }
+   .section3{text-align: center;
+    
+    margin-top: 1px;
+
+   }
+   .boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .box {
+            flex: 1;
+            margin: 0.5rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+.contact form label{
+    display: block;
+     margin: 0.5;
+    padding: 0.25; 
+    width: 100%;
+   
+}
+.contact form label input {
+    width: 100%;
+    padding: 0.5px;
+    margin-bottom: 1px ;
+    border: solid;
+ 
+
+}
+.button{background-color:rgb(30, 168, 3);
+    color: #ffffff;
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+
+}
+
+textarea,input{
+    padding: 10px;
+    border: 1px solid;
+    width: 100%;
+}
+
+    </style>   
+</head>
+<body>
+    <header>
+        <h1>HTML Learning Project</h1>
+    </header>
+    <nav>
+   <ul>
+    <li><a href="home.html">home </a></li><br>
+    <li><a href="project.html" >project</a></li><br>
+    <li><a href="testimonals.html">testimonials</a></li><br>
+    <li><a href="contact.html">contact</a></li><br>
+</ul>
+    </nav>
+    <div class="section1">
+        <h2><b>About This Project</b></h2><br>
+        <P>This project helps students learn HTML and CSS basics by building a functional Web Page</P>
+</div>
+<div class="section2">
+    <h3>Project List</h3>
+    <table border="1px">
+      <tr>
+        <th>project name</th>
+        <th>description</th>
+        <th>status</th>
+      </tr>  
+      <tr>
+        <td>portifolio website</td>
+        <td>show case your project</td>
+        <td>completed</td>
+      </tr>
+      <tr><td>personal blog</td>
+        <td> A simple bloggging platform</td>
+        <td>In progress</td>
+    </tr>
+
+
+    </table>
+</div>
+<div class="section3">
+    <h2><b>testimonials</b></h2><br>
+    <p> <b>challenge</b>:Recreate tid grid layout of testimonials using HTML and  CSS</p>
+   
+</div>
+ 
+<main class="boxes">
+    <div class="box">
+        <img src="sawir.jpg" width="100px" height="100px">
+        <p><strong>Reviewer One</strong></p>
+        <p>"This project taught me a lot about HTML and CSS. I feel much more confident now!"</p>
+    </div>
+    <div class="box">
+        <img src="sawir.jpg" width="100px" height="100px">
+        <p><strong>Reviewer Two</strong></p>
+        <p>"A challenging but rewarding experience. Highly recommended for beginners."</p>
+    </div>
+    <div class="box">
+        <img src="sawir.jpg" width="100px" height="100px">
+        <p><strong>Reviewer Three</strong></p>
+        <p>"I was able to create a functional webpage by the end of this project!"</p>
+    </div>
+</main>
+
+<form>
+    <label for="name">NAME:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="name">email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="massage">massage:</label><br>
+    <textarea id="massage" name="massage" required></textarea><br>
+</form>
+</div>
+<div class="button">
+<button type="submit">Send</button>
+</div>
+</body>
+</html>
